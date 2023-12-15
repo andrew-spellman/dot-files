@@ -1,0 +1,48 @@
+{
+    "spacing": 0, // Gaps between modules (4px)
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["pulseaudio", "network", "memory", "cpu", "battery", "clock"],
+    
+    "hyprland/workspaces": {
+        "format": "{name}",
+    },
+
+    "hyprland/window": {
+        "format": "   {title}",
+        "max-length": 200,
+        "separate-outputs": true
+    },
+
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+
+    "battery": {
+        "format": "BAT {capacity}%",
+    },
+
+    "cpu": {
+        "format": "CPU {usage}%",
+        "tooltip": false
+    },
+
+    "memory": {
+        "format": "MEM {}%"
+    },
+
+    "network": {
+        "format-wifi": "WIFI ({signalStrength}%)",
+        "format-ethernet": "ETH {ipaddr}/{cidr}",
+        "format-linked": "No IP   ",
+        "format-disconnected": "Disconnected",
+        "format-alt": "{ipaddr}/{cidr}"
+    },
+
+    "pulseaudio": {
+        "format": "VOL {volume}%",
+        "on-click": "kitty ncpamixer"
+    },
+}
+

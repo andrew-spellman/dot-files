@@ -1,0 +1,36 @@
+* {
+    font-size: 13px;
+    margin-top: -1;
+    margin-bottom: -1;
+    padding: 0;
+}
+
+window#waybar {
+    background-color: black;
+    color: #FFFEAC;
+}
+
+#workspaces button {
+    background-color: transparent;
+    color: #FFFEAC;
+}
+
+#workspaces button.active {
+    color: #A1B804;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio {
+    margin: 0 10px;
+    color: #FFFEAC;
+}
+
+#window,
+#workspaces {
+    margin: 0 3px;
+    color: #FFFEAC;
+}
